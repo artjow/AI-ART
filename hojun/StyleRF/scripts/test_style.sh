@@ -3,8 +3,7 @@ CUDA_VISIBLE_DEVICES=$1 python train_style.py \
 --config configs/llff_style.txt \
 --datadir ./data/nerf_llff_data/trex \
 --expname $expname \
---ckpt log_style/$expname/$expname.th \
---style_img path/to/reference/style/image \
+--style_img /styles_imges
 --render_only 1 \
 --render_train 0 \
 --render_test 0 \
